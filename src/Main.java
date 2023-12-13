@@ -8,11 +8,11 @@ public class Main {
         int zaplata = (int) ((scanner.nextDouble()) * 100);
         System.out.println("Ile pieniędzy dałes");
         int kwotaWplacona = (int) ((scanner.nextDouble()) * 100);
-        int [] moneyArray = {50000,20000,10000,5000,2000,1000,500,200,100,5,2,1};
+        int [] moneyArray = {50000,20000,10000,5000,2000,1000,500,200,100,50,20,10,5,2,1};
         int rest = kwotaWplacona-zaplata;
         int [] reszta = givingChange(moneyArray,rest);
         for (int i = 0; i<reszta.length;i++) {
-            System.out.println("Banknot o wartosci "+((double)(moneyArray[i]))/100+" jest tutaj w ilosci: "+reszta[i]);
+            System.out.println("Banknot "+((double)(moneyArray[i]))/100+" | "+reszta[i]);
         }
     }
 
